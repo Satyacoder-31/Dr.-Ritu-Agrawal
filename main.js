@@ -243,3 +243,29 @@ if(testimonialCards.length > 0) {
     }
   });
 }
+
+// Gallery Filtering
+const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+const galleryCards = document.querySelectorAll('.gallery-card');
+
+if (filterBtns.length > 0) {
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      galleryCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.style.display = 'flex';
+          gsap.to(card, { opacity: 1, scale: 1, duration: 0.4, ease: 'power2.out' });
+        } else {
+          gsap.to(card, { opacity: 0, scale: 0.9, duration: 0.3, ease: 'power2.in', onComplete: () => {
+            card.style.display = 'none';
+          }});
+        }
+      });
+    });
+  });
+}

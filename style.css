@@ -1306,6 +1306,34 @@
   background: var(--pearl-white);
 }
 
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.gallery-filter-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  border: 1.5px solid rgba(201, 162, 126, 0.4);
+  background: #fff;
+  color: var(--charcoal);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active {
+  background: var(--deep-emerald);
+  color: #fff;
+  border-color: var(--deep-emerald);
+  box-shadow: 0 4px 14px rgba(23, 75, 69, 0.25);
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

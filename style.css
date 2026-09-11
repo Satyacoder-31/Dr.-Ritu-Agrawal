@@ -334,14 +334,14 @@
   .hero-bg {
     position: absolute;
     top: 0; left: 0;
-    width: 100%; height: 120%;
+    width: 100%; height: 100%;
     z-index: -1;
   }
   
   .hero-img {
     width: 100%; height: 100%;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center center;
   }
   
   .hero-overlay {
@@ -1211,7 +1211,7 @@
       overflow: hidden;
     }
     .hero-bg { width: 100%; height: 100%; left: 0; right: 0; margin: 0; position: absolute; }
-    .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
     .hero-overlay { background: linear-gradient(to bottom, rgba(12,35,32,0.72) 0%, rgba(12,35,32,0.55) 55%, rgba(12,35,32,0.65) 100%); width: 100%; height: 100%; position: absolute; }
     .hero-content { padding: 24px; max-width: 100%; margin: 0; box-sizing: border-box; position: relative; z-index: 10; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
     

@@ -505,32 +505,37 @@
     box-shadow: var(--glass-shadow);
   }
   
-  .about-card {
-    position: absolute;
-    bottom: -30px;
-    right: -30px;
-    padding: 2rem;
-    border-radius: 20px;
+  .about-stats-row {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    margin-top: 1.8rem;
+    padding: 1.2rem 2rem;
+    background: rgba(245, 238, 232, 0.7);
+    border-radius: 18px;
+    border: 1px solid rgba(201, 162, 126, 0.3);
+    width: fit-content;
   }
-  
-  .counter-box {
-    text-align: center;
+
+  .about-stat-item {
+    text-align: left;
   }
-  
-  .counter-box span {
+
+  .about-stat-item .counter,
+  .about-stat-item .plus {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
     color: var(--deep-emerald);
-    font-weight: 600;
+    line-height: 1;
   }
-  
-  .counter-box p {
+
+  .about-stat-item p {
     font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--soft-rose-gold);
+    color: var(--charcoal);
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
   }
   
   .qualifications {
